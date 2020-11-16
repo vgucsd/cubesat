@@ -13,7 +13,6 @@ docs/_build
 # user input, output, and "build" files
 **/*.mov
 **/*.avi
-*.html
 *.out
 lsdo_cubesat/cad/
 lsdo_cubesat/_data/

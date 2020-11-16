@@ -14,10 +14,8 @@ the attitude module.
   from openmdao.api import Problem, Group
   from openmdao.api import IndepVarComp
   from lsdo_cubesat.utils.random_arrays import make_random_bounded_array
-  import matplotlib.pyplot as plt
   from lsdo_cubesat.attitude.new.attitude_rk4_gravity_comp import AttitudeRK4GravityComp
   import numpy as np
-  # import pytest
   
   np.random.seed(0)
   num_times = 100
@@ -63,21 +61,10 @@ the attitude module.
   #     for key, val in ofwrt.items():
   #         rel_vals.append(val['rel error'][0])
   #         abs_vals.append(val['abs error'][0])
+  #         assert (val['rel error'][0] < 1e-6)
+  #         assert (val['abs error'][0] < 1e-6)
   # assert (np.all(np.less(rel_vals, 1e-6)))
   # assert (np.all(np.less(abs_vals, 1e-6)))
-  
-  # ok = '[  OK  ]: '
-  # fail = '[ FAIL ]: '
-  # if val['rel error'][0] < 1e-6:
-  #     print(ok, 'REL ', key[0], ' wrt ', key[1])
-  # else:
-  #     print(fail, 'REL ', key[0], ' wrt ', key[1], ', VAL=',
-  #           val['rel error'][0])
-  # if val['abs error'][0] < 1e-6:
-  #     print(ok, 'ABS ', key[0], ' wrt ', key[1])
-  # else:
-  #     print(fail, 'ABS ', key[0], ' wrt ', key[1], ', VAL=',
-  #           val['abs error'][0])
   
 ::
 
