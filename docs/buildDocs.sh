@@ -35,7 +35,6 @@ export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)
 # * https://www.sphinx-doc.org/en/master/usage/quickstart.html#running-the-build
 make -C docs clean
 make -C docs html
-cp -r docs/_build/html/* .
 
 #######################
 # Update GitHub Pages #
